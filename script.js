@@ -13,7 +13,7 @@ function convertToRoman(num) {
 	let ans = "";
 	while(num > 0) {
 		let i = 0;
-		while(num <= numbers[i] && i < numbers.length) {
+		while(num >= numbers[i] && i < numbers.length) {
 			i++;
 		}
 		ans += symbols[i - 1];
